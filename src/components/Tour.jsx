@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../App.css";
 
 function Tour({ image, date, title, info, location, duration, cost }) {
   const [isVisible, setIsVisible] = useState(true);
