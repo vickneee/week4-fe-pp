@@ -576,7 +576,7 @@ min-height:calc(100vh - 62px);
   display: block;
   background: var(--clr-primary-8);
   padding: 0.25rem 0.5rem;
-  color: var(--clr-gray-10);
+  color: var(--clr-gray-5);
   border: 2px solid transparent;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -606,17 +606,6 @@ min-height:calc(100vh - 62px);
 .form {
   display: flex;
   flex-direction: column;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.tours-container {
-  height: 100%;
 }
 
 .section-services {
