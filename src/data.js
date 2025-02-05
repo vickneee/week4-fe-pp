@@ -2,13 +2,15 @@ import tour1 from "./assets/images/tour-1.jpeg";
 import tour2 from "./assets/images/tour-2.jpeg";
 import tour3 from "./assets/images/tour-3.jpeg";
 import tour4 from "./assets/images/tour-4.jpeg";
+import tour5 from "./assets/images/tour-5.jpeg";
+import tour6 from "./assets/images/tour-6.jpeg";
 
 export const pageLinks = [
   { id: 1, href: "/", text: "home" },
   { id: 2, href: "/about", text: "about" },
   { id: 3, href: "/services", text: "services" },
   { id: 4, href: "/tours", text: "tours" },
-  { id: 5, href: "/registration", text: "regisration" }
+  { id: 5, href: "/registration", text: "regisration" },
 ];
 
 export const socialLinks = [
@@ -78,5 +80,25 @@ export const tours = [
     location: "kenya",
     duration: 20,
     cost: 3300,
+  },
+  {
+    id: 5,
+    image: tour5,
+    date: "may 12th, 2025",
+    title: "grand canyon",
+    info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
+    location: "arizona, usa",
+    duration: 5,
+    cost: 1200,
+  },
+  {
+    id: 6,
+    image: tour6,
+    date: "june 1th, 2025",
+    title: "castles of europe",
+    info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
+    location: "europe",
+    duration: 12,
+    cost: 2500,
   },
 ];

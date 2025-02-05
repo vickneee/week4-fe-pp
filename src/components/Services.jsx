@@ -7,10 +7,9 @@ const Services = () => {
   const [servicesData, setServiceData] = useState(services);
 
   return (
-    <div className="container">
+    <div className="section">
+      <Title title="our" subTitle="services" />
       <section className="section section-services services" id="services">
-        <Title title="our" subTitle="services" />
-
         <div className="section-center services-center">
           {servicesData.map((service) => {
             return <Service {...service} key={service.id} />;
