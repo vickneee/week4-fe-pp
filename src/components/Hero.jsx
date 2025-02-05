@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="hero" id="home">
@@ -7,9 +8,9 @@ function Hero() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           explicabo debitis est autem dicta.
         </p>
-        <a href="#tours" className="btn hero-btn">
+        <Link to="/tours" className="btn hero-btn">
           explore tours
-        </a>
+        </Link>
       </div>
     </section>
   );

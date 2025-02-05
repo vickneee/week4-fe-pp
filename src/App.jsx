@@ -9,18 +9,20 @@ import Registration from "./components/Registration"
 import NotFound from "./components/NotFound";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
+      <Routes >
+        <Route path="/" element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/about" element={<About />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
