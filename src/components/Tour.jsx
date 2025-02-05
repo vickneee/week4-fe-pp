@@ -1,7 +1,22 @@
+import { useState } from "react";
+
 function Tour({ image, date, title, info, location, duration, cost }) {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleButtonClick = () => {
+    setIsVisible(false);
+  };
+
+  if (!isVisible) {
+    return null;
+  }
+
   return (
     <article className="tour-card">
       <div className="tour-img-container">
+        <button className="tour-btn" onClick={handleButtonClick}>
+          Not interested
+        </button>
         <img src={image} className="tour-img" alt={title} />
         <p className="tour-date">{date}</p>
       </div>
