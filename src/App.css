@@ -141,7 +141,7 @@ p {
 }
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   scroll-margin-top: 4rem;
 }
 .section-title {
@@ -574,9 +574,9 @@ min-height:calc(100vh - 62px);
 .service-btn,
 .register-btn {
   display: block;
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
+  background: var(--clr-primary-8);
   padding: 0.25rem 0.5rem;
+  color: var(--clr-gray-10);
   border: 2px solid transparent;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -586,7 +586,7 @@ min-height:calc(100vh - 62px);
 
 .service-btn {
   margin-bottom: 1rem;
-  width: 3.5rem;
+  width: 3.65rem;
 }
 
 .register-btn {
@@ -615,6 +615,50 @@ min-height:calc(100vh - 62px);
   height: 100vh;
 }
 
+.tours-container {
+  height: 100%;
+}
+
 .section-services {
   padding: 30px;
+}
+
+.form.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form.card div {
+  margin-bottom: 1rem;
+}
+
+.form.card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form.card input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--clr-primary-5);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.register-btn:hover {
+  background-color: var(--clr-primary-6);
 }
