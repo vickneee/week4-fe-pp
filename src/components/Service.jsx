@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 const Service = ({ icon, title, text }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -28,4 +29,11 @@ const Service = ({ icon, title, text }) => {
     </div>
   );
 };
+
+Service.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}
+
 export default Service;

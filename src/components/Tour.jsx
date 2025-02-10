@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 import "../App.css";
 
 function Tour({ image, date, title, info, location, duration, cost }) {
@@ -42,5 +43,15 @@ function Tour({ image, date, title, info, location, duration, cost }) {
     </div>
   );
 }
+
+Tour.propTypes = {
+  image: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  info: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  duration: PropTypes.number.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 export default Tour;
